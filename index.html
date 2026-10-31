@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#315c4b">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="Manage tuition centre students, classes, and monthly fee payments.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Tuition Manager">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" href="./icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./icon.svg">
+    <link rel="stylesheet" href="./styles.css?v=5">
+    <title>Tuition Centre Manager</title>
+  </head>
+  <body>
+    <div class="app-frame">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="Tuition Centre Manager home">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span>
+            <strong>Tuition Centre Manager</strong>
+            <small>Your centre at a glance</small>
+          </span>
+        </a>
+      </header>
+      <main id="app" class="app-main" tabindex="-1"></main>
+      <nav class="bottom-nav" aria-label="Main navigation">
+        <button type="button" data-page="home"><span aria-hidden="true">⌂</span>Home</button>
+        <button type="button" data-page="students"><span aria-hidden="true">♙</span>Students</button>
+        <button type="button" data-page="fees"><span aria-hidden="true">₹</span>Fees</button>
+        <button type="button" data-page="settings"><span aria-hidden="true">⚙</span>Settings</button>
+      </nav>
+    </div>
+    <dialog id="app-dialog" class="app-dialog" aria-labelledby="dialog-title"></dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
